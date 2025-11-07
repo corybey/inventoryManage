@@ -1,19 +1,19 @@
 // Add and Edit entries
 
 import 'package:flutter/material.dart';
-import '../models/item.dart';
+import '../models/items.dart';
 import '../services/firestore_service.dart';
 
-class AddEditItemScreen extends StatefulWidget {
+class AddEditScreen extends StatefulWidget {
   final Item? item;
 
-  const AddEditItemScreen({super.key, this.item});
+  const AddEditScreen({super.key, this.item});
 
   @override
-  State<AddEditItemScreen> createState() => _AddEditItemScreenState();
+  State<AddEditScreen> createState() => _AddEditItemScreenState();
 }
 
-class _AddEditItemScreenState extends State<AddEditItemScreen> {
+class _AddEditItemScreenState extends State<AddEditScreen> {
   final _formKey = GlobalKey<FormState>();
   final _nameCtrl = TextEditingController();
   final _qtyCtrl = TextEditingController();

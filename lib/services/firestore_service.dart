@@ -1,7 +1,7 @@
 // Firebase services
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/item.dart';
+import '../models/items.dart';
 
 class FirestoreService {
   final CollectionReference _itemsRef =

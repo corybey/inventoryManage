@@ -3,10 +3,11 @@
 //Other functions added
 
 import 'package:flutter/material.dart';
-import '../models/item.dart';
+import '../models/items.dart';
 import '../services/firestore_service.dart';
-import 'add_edit_item_screen.dart';
+import 'add_edit_screen.dart';
 import 'dashboard_screen.dart';
+
 
 class InventoryHomePage extends StatefulWidget {
   const InventoryHomePage({super.key});
@@ -166,7 +167,7 @@ class _InventoryHomePageState extends State<InventoryHomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (_) => AddEditItemScreen(item: item),
+                              builder: (_) => AddEditScreen(item: item),
                             ),
                           );
                         }
@@ -207,7 +208,7 @@ class _InventoryHomePageState extends State<InventoryHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (_) => const AddEditItemScreen()),
+                      builder: (_) => AddEditScreen()),
                 );
               },
               child: const Icon(Icons.add),

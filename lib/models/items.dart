@@ -1,6 +1,6 @@
-// Item layout
+// item layout
 import 'package:cloud_firestore/cloud_firestore.dart';
-//Item attributes
+//fields
 class Item {
   final String? id;
   final String name;
@@ -8,7 +8,7 @@ class Item {
   final double price;
   final String category;
   final DateTime createdAt;
-
+//requirements
   Item({
     this.id,
     required this.name,
@@ -17,7 +17,7 @@ class Item {
     required this.category,
     required this.createdAt,
   });
-//Hash map
+
   Map<String, dynamic> toMap() {
     return {
       'name': name,
@@ -27,12 +27,12 @@ class Item {
       'createdAt': Timestamp.fromDate(createdAt),
     };
   }
-// Pull info
+//hash layout
   factory Item.fromMap(String id, Map<String, dynamic> map) {
     return Item(
       id: id,
       name: map['name'] ?? '',
-      quantity: (map['quantity'] ?? 0) as int,
+      quantity: map['quantity'] ?? 0,
       price: (map['price'] is int)
           ? (map['price'] as int).toDouble()
           : (map['price'] ?? 0.0) as double,

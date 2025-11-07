@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "563630810765",
+    "project_id": "act15-inventory-2a7b5",
+    "storage_bucket": "act15-inventory-2a7b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563630810765:android:bec275e8a56f247857e4c4",
+        "android_client_info": {
+          "package_name": "com.example.firebaseproj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsC-RquWr2nIUGnCmowtkJI6Ztg1_eK6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
